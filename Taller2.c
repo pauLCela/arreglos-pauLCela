@@ -90,18 +90,23 @@ int main ()
                                         printf("Desea ingresar otro estudiante?\n1.Si\n2.No\n");
                                         printf("Ingrese la opcion: ");
                                         do {
-                                            fflush(stdin);
-                                            val = scanf("%d", &opc4);
-                                            if (val != 1){
-                                                printf("Valor incorrecto ingrese denuevo: ");
+                                            do {
+                                                fflush(stdin);
+                                                val = scanf("%d", &opc4);
+                                                if (val != 1){
+                                                    printf("Valor incorrecto ingrese denuevo: ");
+                                                }
+                                            } while (val != 1);
+                                            if (opc4 == 2){
+                                                i = 5;
+                                                break;
+                                            } else if (opc4 == 1){
+                                                printf("Continuando... \n");
+                                                contp++;
+                                            } else if (opc4 < 1 || opc4 > 2){
+                                                printf("Opcion invalida. Ingrese nuevamente la opcion: ");
                                             }
-                                        } while (val != 1);
-                                        if (opc4 == 2){
-                                            break;
-                                        } else {
-                                            printf("Continuando... \n");
-                                            contp++;
-                                        }
+                                        } while (opc4 < 1 || opc4 > 2);
                                 
                                     } else {
                                         printf("Valor maximo de estudiantes alcanzado.\n");
@@ -127,18 +132,23 @@ int main ()
                                     printf("Desea ingresar otro estudiante?\n1.Si\n2.No\n");
                                     printf("Ingrese la opcion: ");
                                     do {
-                                        fflush(stdin);
-                                        val = scanf("%d", &opc4);
-                                        if (val != 1){
-                                            printf("Valor incorrecto ingrese denuevo: ");
+                                        do {
+                                            fflush(stdin);
+                                            val = scanf("%d", &opc4);
+                                            if (val != 1){
+                                                printf("Valor incorrecto ingrese denuevo: ");
+                                            }
+                                        } while (val != 1);
+                                        if (opc4 == 2){
+                                            i = 5;
+                                            break;
+                                        } else if (opc4 == 1){
+                                            printf("Continuando... \n");
+                                            contp++;
+                                        } else if (opc4 < 1 || opc4 > 2){
+                                            printf("Opcion invalida. Ingrese nuevamente la opcion: ");
                                         }
-                                    } while (val != 1);
-                                    if (opc4 == 2){
-                                        break;
-                                    } else {
-                                        printf("Continuando... \n");
-                                        contp++;
-                                    }
+                                    } while (opc4 < 1 || opc4 > 2);
                                 
                                 } else {
                                     printf("Valor maximo de estudiantes alcanzado.\n");
@@ -165,19 +175,23 @@ int main ()
                             printf("Desea ingresar otro estudiante?\n1.Si\n2.No\n");
                             printf("Ingrese la opcion: ");
                             do {
-                                fflush(stdin);
-                                val = scanf("%d", &opc4);
-                                if (val != 1){
-                                    printf("Valor incorrecto ingrese denuevo: ");
+                                do {
+                                    fflush(stdin);
+                                    val = scanf("%d", &opc4);
+                                    if (val != 1){
+                                        printf("Valor incorrecto ingrese denuevo: ");
+                                    }
+                                } while (val != 1);
+                                if (opc4 == 2){
+                                    i = 5;
+                                    break;
+                                } else if (opc4 == 1){
+                                    printf("Continuando... \n");
+                                    contp++;
+                                } else if (opc4 < 1 || opc4 > 2){
+                                    printf("Opcion invalida. Ingrese nuevamente la opcion: ");
                                 }
-                            } while (val != 1);
-                            if (opc4 == 2){
-                                break;
-                            } else {
-                                printf("Continuando... \n");
-                                contp++;
-                            }
-                        
+                            } while (opc4 < 1 || opc4 > 2);
                         } else {
                             printf("Valor maximo de estudiantes alcanzado.\n");
                         }
